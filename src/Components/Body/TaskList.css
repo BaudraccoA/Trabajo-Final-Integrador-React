@@ -1,0 +1,63 @@
+.task-list-container {
+    max-width: 400px; /* Ajusta el ancho según tus necesidades */
+    margin: auto;
+  }
+  
+  .folder-sheet {
+    border: 2px solid #d1cfcf;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .empty-row {
+    height: 25px; /* Altura del primer renglón */
+    border-top: 1px dashed #d1cece; /* Líneas punteadas superiores */
+   
+  }
+  
+  .task-row {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #f1f0f0; /* Líneas horizontales suaves */
+  }
+  
+  .left-column {
+    width: 15%; /* Ancho del cuadrado izquierdo */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .line-vertical {
+    height: 100%;
+    width: 2px;
+    background-color: #800000; /* Bordo */
+    margin: 0 5px; /* Espacio entre las líneas */
+  }
+  
+  .thicker-line-vertical {
+    height: 100%;
+    width: 4px; /* Ancho de la línea más gruesa */
+    background-color: #800000; /* Bordo */
+    margin: 0 5px; /* Espacio entre las líneas */
+  }
+  
+  
+  
+  .event-square {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff; /* Color del cuadrado */
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #d1cfcf;
+  }
+  
+  .right-column {
+    flex: 1;
+    padding: 10px; /* Espaciado para la descripción de la tarea */
+  }
+  
+  /* Puedes agregar estilos adicionales según tus preferencias */
+  
