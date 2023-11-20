@@ -4,7 +4,7 @@
   }
   
   .header {
-    background: linear-gradient(to bottom, #747474, #4a4848);
+    background: linear-gradient(to bottom, #747474, #2f2e2e);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -17,15 +17,16 @@
   
   .title {
     font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .add-button {
-    background: #444;
+    background: linear-gradient(to bottom, #747474, #2f2e2e);
     color: white;
     border: 1px solid black;
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
   }
   
