@@ -1,16 +1,32 @@
-import React from 'react';
-import './TodoList.jsx'
-import './TodoList.css'
+import React, { useState } from 'react';
+import './TodoList.css';
 
+const TodoList = ({onAddTask}) => {
+  const [newTaskDescription, setNewTaskDescription] = useState('');
 
- const TodoList = () => {
+  const handleAddTask = () => {
+    if (newTaskDescription.trim() !== '') {
+      onAddTask(newTaskDescription);
+      setNewTaskDescription('');
+    }
+  };
   return (
     <div className="todo-list-container">
       <div className="header">
         <div className="title">Todo List</div>
-        <button className="add-button">+</button>
+        <div className="add-task-container">
+          <input
+            type="text"
+            placeholder="Nueva tarea"
+            value={newTaskDescription}
+            onChange={(e) => setNewTaskDescription(e.target.value)}
+          />
+          <button className="add-button" onClick={handleAddTask}>
+            +
+          </button>
+        </div>
       </div>
-      {/* Aquí iría la lista de tareas */}
+      {/* Resto del componente */}
     </div>
   );
 };
